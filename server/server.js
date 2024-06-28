@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
-const port = 3000;
-const path = require('path')
+const port = 8080;
+// const path = require('path')
 
 //parsing incoming json requests
-app.use(express.json());
+// app.use(express.json());
 
 
-app.get('/', (req, res) => {
+app.get('/names', (req, res) => {
 
-    res.sendFile(path.join(__dirname, '../index.html'));
+    res.json({"users": ["userOne", "userTwo", "userThree"]})
 });
 
 
