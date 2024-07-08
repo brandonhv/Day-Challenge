@@ -1,36 +1,27 @@
-import React, {useEffect, useState} from "react";
+// import React, {useEffect, useState} from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
+import Home from "./pages/Home"
+import Archive from "./pages/Archive"
+import Projects from "./pages/Projects"
+import Scheduale from "./pages/Scheduale"
+
+
+// import style from "./App.css"
 
 function App () {
 
-  const [backendData, setBackendData] = useState({})
-
-
-  useEffect(() => {
-
-    fetch("/names")
-    .then(response => response.json())
-    .then(data => {
-
-      setBackendData(data)
-    });
-  }, []);
-
   return (
-
-    <div>
-
-      <button className="button"></button>
-
-      {(typeof backendData.users ===  'undefined') ? (
-        <p>Loading...</p>
-      ): (
-        backendData.users.map((user, i) => (
-          <p key={i}>{user}</p>
-      )))}
-
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+          <Route index element={<Home />} />
+          <Route path="/archive" element={<Archive />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/scheduale" element={<Scheduale />} />
+          <Route path="*" element={<Navigate to="/" replace/>}/>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 
