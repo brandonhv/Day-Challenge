@@ -1,0 +1,29 @@
+.sidebar {
+  width: 20%; /* Use percentages for responsive width */
+  height: 100vh;
+  min-width: 150px; /* Ensure a minimum width */
+  max-width: 150px; /* Optionally, set a maximum width */
+  background-color: rgb(47, 232, 225);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.all-buttoms {
+
+  list-style: none;
+}
+.side-buttoms {
+  
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
