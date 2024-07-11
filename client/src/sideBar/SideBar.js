@@ -5,7 +5,7 @@ import "../styles/App.css"
 
 const SideBar = () => {
   return (
-    <aside className='sidebar'>
+    
         <ul className="all-buttoms">
             <li><Link to="/" className="side-buttoms">Home</Link></li>
             <li><Link to="/archive" className="side-buttoms">Archive</Link></li>
@@ -13,11 +13,8 @@ const SideBar = () => {
             <li><Link to="/scheduale" className="side-buttoms">Scheduale</Link></li>
             <li><Link to="/timeclock" className="side-buttoms">TimeClock</Link></li>
         </ul>
-    </aside>
+  
   );
 }
 
 export default SideBar;
-
-
-// is this pushing to github
