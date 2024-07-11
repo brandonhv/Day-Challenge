@@ -1,4 +1,6 @@
 const NavBar = () => {
+
+    return <h2>CAD</h2>
     
   }
   
