@@ -7,11 +7,10 @@ import Projects from './pages/Projects';
 import Scheduale from './pages/Scheduale';
 import TimeClock from './pages/TimeClock';
 
-import '../styles/MainContent.css'; 
 
 const MainContent = () => {
   return (
-    <div className="content-area">
+
       <Routes>
         <Route index element={<Home />} />
         <Route path="/archive" element={<Archive />} />
@@ -20,7 +19,6 @@ const MainContent = () => {
         <Route path="/timeclock" element={<TimeClock />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </div>
   );
 }
 

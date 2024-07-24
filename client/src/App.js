@@ -8,13 +8,23 @@ import './styles/App.css';
 const App = () => {
   return (
     <BrowserRouter>
+
       <div className="app-container">
-        <NavBar /> 
-        <div className="main-content">
+
+        <header className='navbar'>
+          <NavBar /> 
+        </header>
+
+        <aside className='sidebar'>
           <SideBar /> 
+        </aside>
+
+        <main className="main-content">
           <MainContent /> 
-        </div>
+        </main>
+          
       </div>
+
     </BrowserRouter>
   );
 }
