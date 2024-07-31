@@ -1,9 +1,10 @@
 import React from "react"
+import Calendar from '../../sideBar/buttoms/Scheduale'
 
 
-const Scheduale = () => {
+const Archive = () => {
 
-    return <h1>Scheduale</h1>
-}
+    return <Calendar/>
+};
 
-export default Scheduale;
+export default Archive;

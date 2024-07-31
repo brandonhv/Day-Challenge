@@ -1,10 +1,10 @@
 import React from "react"
-import Calendar from '../../sideBar/buttoms/Scheduale'
+
 
 
 const Archive = () => {
 
-    return <Calendar/>
-}
+    return <h1>Archive</h1>
+};
 
 export default Archive;
