@@ -2,6 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+
+
+
+
+
 const TimeClock = () => {
     
   const location = useLocation();
@@ -27,7 +32,7 @@ const TimeClock = () => {
     <>
       <li>
         <Link to="/timeclock" className="side-buttons">
-          TimeClock
+          TimeClockkjkj
         </Link>
       </li>
       {location.pathname === '/timeclock' && (
