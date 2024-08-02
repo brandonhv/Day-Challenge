@@ -34,7 +34,7 @@ const TimeClock = () => {
           // Define a rectangle and set its editable property to true.
           const rectangle = new google.maps.Rectangle({
             bounds: bounds,
-            editable: false,
+            editable: true,
             draggable: true,
           });
     
